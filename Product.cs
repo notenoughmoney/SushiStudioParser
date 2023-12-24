@@ -11,7 +11,12 @@ namespace SushiStudioParser
         public string? Name { get; set; }
         public string? Description { get; set; }
         public string? Type { get; set; }
-        public string? Cost { get; set; }
-        public string? Weignt { get; set; }
+        public int? Cost { get; set; }
+        public int? Weight { get; set; }
+        public float? Ratio { get; set; }
+
+        public void print() { 
+            Console.WriteLine(Name + " " + Description + " " + Type + " " + Cost + " " + Weight + " " + Ratio);    
+        } 
     }
 }
